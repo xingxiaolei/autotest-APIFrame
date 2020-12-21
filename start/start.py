@@ -11,5 +11,5 @@ if __name__ == '__main__':
 
     pytest.main()
 
-    # subprocess.call(settings.ALLURE_COMMAND, shell=False)
-    os.system(settings.ALLURE_COMMAND)
+    subprocess.call(settings.ALLURE_COMMAND, shell=False)
+    # os.system(settings.ALLURE_COMMAND)
