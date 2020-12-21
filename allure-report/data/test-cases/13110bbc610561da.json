@@ -1,0 +1,56 @@
+{
+  "uid" : "13110bbc610561da",
+  "name" : "test_case[item0]",
+  "fullName" : "testcase.test_case#test_case",
+  "historyId" : "43362b1ba5c2915f43787cf26be0fb3c",
+  "time" : {
+    "start" : 1608540124361,
+    "stop" : 1608540124409,
+    "duration" : 48
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert not {\"root['code']\": {'new_value': '2', 'old_value': '0'}}\n +  where {\"root['code']\": {'new_value': '2', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x0000000003D0A830>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x0000000003D0A830> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': '52b6457f1fc844af8f09edbbd3ea5458', 'message': 'success'}, {'code': '2', 'message': 'success'})",
+  "statusTrace" : "item = {'case_num': 'neeo_001', 'cookies': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'expect': '{\"code\": \"2\", \"message\": \"success\"}', ...}\n\n    @pytest.mark.parametrize('item', case_list)\n    def test_case(item):\n        result, expected = RequestsOperate(current_case=item, case_list=case_list).get_response()\n>       assert not DeepDiff(result, expected).get('values_changed', {})\nE       assert not {\"root['code']\": {'new_value': '2', 'old_value': '0'}}\nE        +  where {\"root['code']\": {'new_value': '2', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x0000000003D0A830>('values_changed', {})\nE        +    where <built-in method get of DeepDiff object at 0x0000000003D0A830> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}}.get\nE        +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': '52b6457f1fc844af8f09edbbd3ea5458', 'message': 'success'}, {'code': '2', 'message': 'success'})\n\ntestcase\\test_case.py:16: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "host",
+    "value" : "FD2020505"
+  }, {
+    "name" : "thread",
+    "value" : "7868-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "item",
+    "value" : "{'case_num': 'neeo_001', 'title': 'token_登录', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/login2', 'method': 'post', 'params': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"2\", \"message\": \"success\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "13110bbc610561da.json",
+  "parameterValues" : [ "{'case_num': 'neeo_001', 'title': 'token_登录', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/login2', 'method': 'post', 'params': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"2\", \"message\": \"success\"}'}" ]
+}

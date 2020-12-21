@@ -1,0 +1,56 @@
+{
+  "uid" : "d0a087b607042806",
+  "name" : "test_case[item6]",
+  "fullName" : "testcase.test_case#test_case",
+  "historyId" : "0325a669ac9169b93bbb2716ed6d7489",
+  "time" : {
+    "start" : 1608538423614,
+    "stop" : 1608538423614,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'tmp_request_params'",
+  "statusTrace" : "item = {'case_num': 'neeo_007', 'cookies': '', 'data': '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}', 'expect': '{\"code\": \"0\", \"message\": \"success\"}', ...}\n\n    @pytest.mark.parametrize('item', case_list)\n    def test_case(item):\n>       result, expected = RequestsOperate(current_case=item, case_list=case_list).get_response()\n\ntestcase\\test_case.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nutils\\RequestsHandler.py:21: in get_response\n    data=self._check_data(self.current_case['data']),\nutils\\RequestsHandler.py:79: in _check_data\n    data = self._check_re(data)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <utils.RequestsHandler.RequestsOperate object at 0x0000000004B7EC88>\nparams = '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}'\n\n    def _check_re(self, params):\n        '''检查data 和 param中是否有要替换的参数\n        {\"testfan-token\": \"${neeo_001>response_json>data}$\", \"userName\": \"${neeo_001>request_headers>userName}$\"}\n        '''\n        pattern = re.compile('\\${(.*?)}\\$')\n        match_list = pattern.findall(params) #匹配所有，结果为列表\n        if match_list:\n            for match in match_list:\n                case_num, params_type, path = match.split('>')\n                for case in self.case_list:\n                    if case_num == case['case_num']:\n>                       tmp_data = case['tmp_{}'.format(params_type)]\nE                       KeyError: 'tmp_request_params'\n\nutils\\RequestsHandler.py:62: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "host",
+    "value" : "FD2020505"
+  }, {
+    "name" : "thread",
+    "value" : "4088-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "item",
+    "value" : "{'case_num': 'neeo_007', 'title': '普通登录', 'url': 'http://www.neeo.cc:6002/pinter/com/login', 'method': 'post', 'params': '', 'data': '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d0a087b607042806.json",
+  "parameterValues" : [ "{'case_num': 'neeo_007', 'title': '普通登录', 'url': 'http://www.neeo.cc:6002/pinter/com/login', 'method': 'post', 'params': '', 'data': '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+}

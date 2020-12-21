@@ -1,0 +1,104 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_case",
+      "children" : [ {
+        "name" : "test_case[item0]",
+        "uid" : "129ba94ec320a760",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540368739,
+          "stop" : 1608540368785,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_001', 'title': 'token_登录', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/login2', 'method': 'post', 'params': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"2\", \"message\": \"success\"}'}" ]
+      }, {
+        "name" : "test_case[item1]",
+        "uid" : "9ce0b31b6387c7c",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608540368933,
+          "stop" : 1608540368934,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_002', 'title': 'token_查询余额', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/query2', 'method': 'get', 'params': '{\"userName\": \"admin\"}', 'data': '', 'json': '', 'cookies': '', 'headers': '{\"testfan-token\": \"${neeo_001>response_json>data}$\"}', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      }, {
+        "name" : "test_case[item2]",
+        "uid" : "55f38ea01bbc4ccc",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608540369003,
+          "stop" : 1608540369029,
+          "duration" : 26
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_003', 'title': 'cookies_登录', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/login', 'method': 'post', 'params': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      }, {
+        "name" : "test_case[item3]",
+        "uid" : "f4b3105b591904c8",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540369037,
+          "stop" : 1608540369072,
+          "duration" : 35
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_004', 'title': 'cookies_查询余额', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/query', 'method': 'get', 'params': '{\"userName\": \"admin\"}', 'data': '', 'json': '', 'cookies': 'neeo_003', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success1\"}'}" ]
+      }, {
+        "name" : "test_case[item4]",
+        "uid" : "b850b4524b9c0c64",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608540369086,
+          "stop" : 1608540369130,
+          "duration" : 44
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_005', 'title': '下单接口', 'url': 'http://www.neeo.cc:6002/pinter/com/buy', 'method': 'post', 'params': '', 'data': '{\"param\":{\"skuId\":123,\"num\":10}}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      }, {
+        "name" : "test_case[item5]",
+        "uid" : "6d6b8d93b2292141",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540369138,
+          "stop" : 1608540369162,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_006', 'title': '查询库存', 'url': 'http://www.neeo.cc:6002/pinter/com/getSku', 'method': 'get', 'params': '{\"id\":1}', 'data': '', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"3\", \"message\": \"success\"}'}" ]
+      }, {
+        "name" : "test_case[item6]",
+        "uid" : "e575d094b0328c3a",
+        "parentUid" : "4581fae78630859f5dda8ae94a70afaf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608540369177,
+          "stop" : 1608540369177,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_007', 'title': '普通登录', 'url': 'http://www.neeo.cc:6002/pinter/com/login', 'method': 'post', 'params': '', 'data': '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      } ],
+      "uid" : "4581fae78630859f5dda8ae94a70afaf"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

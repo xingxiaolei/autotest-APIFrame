@@ -1,0 +1,140 @@
+{
+  "7413167d684b4285e4fc132fec9b0be7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d6b8d93b2292141",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert not {\"root['code']\": {'new_value': '3', 'old_value': '0'}}\n +  where {\"root['code']\": {'new_value': '3', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x00000000045FB200>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x00000000045FB200> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '3', 'old_value': '0'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '3', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': {'brand': 'testfan', 'price': '645', 'skuId': 1, 'skuName': 'ptest-1', ...}, 'message': 'success'}, {'code': '3', 'message': 'success'})",
+      "time" : {
+        "start" : 1608540369138,
+        "stop" : 1608540369162,
+        "duration" : 24
+      }
+    } ]
+  },
+  "ef0804afd4b69a9b1105382a9f94d794" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55f38ea01bbc4ccc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608540369003,
+        "stop" : 1608540369029,
+        "duration" : 26
+      }
+    } ]
+  },
+  "43362b1ba5c2915f43787cf26be0fb3c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "129ba94ec320a760",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert not {\"root['code']\": {'new_value': '2', 'old_value': '0'}}\n +  where {\"root['code']\": {'new_value': '2', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x0000000003D2A830>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x0000000003D2A830> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': '1d9114a84d1546e59d5e4f3b421fe22a', 'message': 'success'}, {'code': '2', 'message': 'success'})",
+      "time" : {
+        "start" : 1608540368739,
+        "stop" : 1608540368785,
+        "duration" : 46
+      }
+    } ]
+  },
+  "8c5edd55d1825bcf7472deac1085aabb" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4b3105b591904c8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert not {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}\n +  where {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}} = <built-in method get of DeepDiff object at 0x00000000045FB3B8>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x00000000045FB3B8> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}} = DeepDiff({'code': '1', 'data': None, 'message': '用户不合法'}, {'code': '0', 'message': 'success1'})",
+      "time" : {
+        "start" : 1608540369037,
+        "stop" : 1608540369072,
+        "duration" : 35
+      }
+    } ]
+  },
+  "0325a669ac9169b93bbb2716ed6d7489" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e575d094b0328c3a",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'tmp_request_params'",
+      "time" : {
+        "start" : 1608540369177,
+        "stop" : 1608540369177,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3a3213a458a83f4f6dced9ba5fd20d07" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9ce0b31b6387c7c",
+      "status" : "broken",
+      "statusDetails" : "TypeError: the JSON object must be str, bytes or bytearray, not dict",
+      "time" : {
+        "start" : 1608540368933,
+        "stop" : 1608540368934,
+        "duration" : 1
+      }
+    } ]
+  },
+  "40fc13d5d86c5205b398c739b63df419" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b850b4524b9c0c64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608540369086,
+        "stop" : 1608540369130,
+        "duration" : 44
+      }
+    } ]
+  }
+}

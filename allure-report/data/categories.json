@@ -1,0 +1,98 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert not {\"root['code']\": {'new_value': '2', 'old_value': '0'}}\n +  where {\"root['code']\": {'new_value': '2', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x0000000003D2A830>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x0000000003D2A830> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '2', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': '1d9114a84d1546e59d5e4f3b421fe22a', 'message': 'success'}, {'code': '2', 'message': 'success'})",
+      "children" : [ {
+        "name" : "test_case[item0]",
+        "uid" : "129ba94ec320a760",
+        "parentUid" : "24483fd542156db17b124f1627d0cbef",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540368739,
+          "stop" : 1608540368785,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_001', 'title': 'token_登录', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/login2', 'method': 'post', 'params': '', 'data': '{\"userName\": \"admin\", \"password\": \"1234\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"2\", \"message\": \"success\"}'}" ]
+      } ],
+      "uid" : "24483fd542156db17b124f1627d0cbef"
+    }, {
+      "name" : "AssertionError: assert not {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}\n +  where {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}} = <built-in method get of DeepDiff object at 0x00000000045FB3B8>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x00000000045FB3B8> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '0', 'old_value': '1'}, \"root['message']\": {'new_value': 'success1', 'old_value': '用户不合法'}}} = DeepDiff({'code': '1', 'data': None, 'message': '用户不合法'}, {'code': '0', 'message': 'success1'})",
+      "children" : [ {
+        "name" : "test_case[item3]",
+        "uid" : "f4b3105b591904c8",
+        "parentUid" : "75b585cfd8622d0e90fb13bbfd6595e3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540369037,
+          "stop" : 1608540369072,
+          "duration" : 35
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_004', 'title': 'cookies_查询余额', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/query', 'method': 'get', 'params': '{\"userName\": \"admin\"}', 'data': '', 'json': '', 'cookies': 'neeo_003', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success1\"}'}" ]
+      } ],
+      "uid" : "75b585cfd8622d0e90fb13bbfd6595e3"
+    }, {
+      "name" : "AssertionError: assert not {\"root['code']\": {'new_value': '3', 'old_value': '0'}}\n +  where {\"root['code']\": {'new_value': '3', 'old_value': '0'}} = <built-in method get of DeepDiff object at 0x00000000045FB200>('values_changed', {})\n +    where <built-in method get of DeepDiff object at 0x00000000045FB200> = {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '3', 'old_value': '0'}}}.get\n +      where {'dictionary_item_removed': [root['data']], 'values_changed': {\"root['code']\": {'new_value': '3', 'old_value': '0'}}} = DeepDiff({'code': '0', 'data': {'brand': 'testfan', 'price': '645', 'skuId': 1, 'skuName': 'ptest-1', ...}, 'message': 'success'}, {'code': '3', 'message': 'success'})",
+      "children" : [ {
+        "name" : "test_case[item5]",
+        "uid" : "6d6b8d93b2292141",
+        "parentUid" : "6cd5764d5b4ad551624c55a3770386d4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608540369138,
+          "stop" : 1608540369162,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_006', 'title': '查询库存', 'url': 'http://www.neeo.cc:6002/pinter/com/getSku', 'method': 'get', 'params': '{\"id\":1}', 'data': '', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"3\", \"message\": \"success\"}'}" ]
+      } ],
+      "uid" : "6cd5764d5b4ad551624c55a3770386d4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: the JSON object must be str, bytes or bytearray, not dict",
+      "children" : [ {
+        "name" : "test_case[item1]",
+        "uid" : "9ce0b31b6387c7c",
+        "parentUid" : "8b8549dd99e9b3cbe23b7938cec0b688",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608540368933,
+          "stop" : 1608540368934,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_002', 'title': 'token_查询余额', 'url': 'http://www.neeo.cc:6002/pinter/bank/api/query2', 'method': 'get', 'params': '{\"userName\": \"admin\"}', 'data': '', 'json': '', 'cookies': '', 'headers': '{\"testfan-token\": \"${neeo_001>response_json>data}$\"}', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      } ],
+      "uid" : "8b8549dd99e9b3cbe23b7938cec0b688"
+    }, {
+      "name" : "KeyError: 'tmp_request_params'",
+      "children" : [ {
+        "name" : "test_case[item6]",
+        "uid" : "e575d094b0328c3a",
+        "parentUid" : "7889d4f46a301011f8a47e153b1e18c6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1608540369177,
+          "stop" : 1608540369177,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_num': 'neeo_007', 'title': '普通登录', 'url': 'http://www.neeo.cc:6002/pinter/com/login', 'method': 'post', 'params': '', 'data': '{\"userName\": \"${neeo_002>request_params>userName}$\", \"password\": \"${neeo_003>request_data>password}$\"}', 'json': '', 'cookies': '', 'headers': '', 'expect': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+      } ],
+      "uid" : "7889d4f46a301011f8a47e153b1e18c6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

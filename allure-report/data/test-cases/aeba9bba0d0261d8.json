@@ -1,0 +1,56 @@
+{
+  "uid" : "aeba9bba0d0261d8",
+  "name" : "test_case[item4]",
+  "fullName" : "testcase.test_case#test_case",
+  "historyId" : "40fc13d5d86c5205b398c739b63df419",
+  "time" : {
+    "start" : 1608538360024,
+    "stop" : 1608538360138,
+    "duration" : 114
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'expect'",
+  "statusTrace" : "item = {'case_num': 'neeo_005', 'cookies': '', 'data': '{\"param\":{\"skuId\":123,\"num\":10}}', 'except': '{\"code\": \"0\", \"message\": \"success\"}', ...}\n\n    @pytest.mark.parametrize('item', case_list)\n    def test_case(item):\n>       result, expected = RequestsOperate(current_case=item, case_list=case_list).get_response()\n\ntestcase\\test_case.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <utils.RequestsHandler.RequestsOperate object at 0x0000000003D67B38>\n\n    def get_response(self):\n        response = requests.request(\n            method=self.current_case['method'],\n            url=self.current_case['url'],\n            data=self._check_data(self.current_case['data']),\n            params=self._check_params(self.current_case['params']),\n            headers = self._check_headers(self.current_case['headers']),\n            verify = False,\n            timeout=120\n        )\n        self._write_data(response)\n>       return response.json(), json.loads(self.current_case['expect'])\nE       KeyError: 'expect'\n\nutils\\RequestsHandler.py:28: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "host",
+    "value" : "FD2020505"
+  }, {
+    "name" : "thread",
+    "value" : "11764-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "item",
+    "value" : "{'case_num': 'neeo_005', 'title': '下单接口', 'url': 'http://www.neeo.cc:6002/pinter/com/buy', 'method': 'post', 'params': '', 'data': '{\"param\":{\"skuId\":123,\"num\":10}}', 'json': '', 'cookies': '', 'headers': '', 'except': '{\"code\": \"0\", \"message\": \"success\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aeba9bba0d0261d8.json",
+  "parameterValues" : [ "{'case_num': 'neeo_005', 'title': '下单接口', 'url': 'http://www.neeo.cc:6002/pinter/com/buy', 'method': 'post', 'params': '', 'data': '{\"param\":{\"skuId\":123,\"num\":10}}', 'json': '', 'cookies': '', 'headers': '', 'except': '{\"code\": \"0\", \"message\": \"success\"}'}" ]
+}
